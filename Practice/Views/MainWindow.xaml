@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="350" Width="525" >
+        Title="{Binding Title}" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid>
         <Canvas>
             <Ellipse Canvas.Left="100" Canvas.Top="20" Width="50" Height="50" Fill="Red" Panel.ZIndex="1"/>
@@ -23,7 +23,7 @@
                     </PathGeometry>
                 </Path.Data>
             </Path>
-            <Button Canvas.Left="105" Canvas.Top="40" Content="押せ！！" FontSize="10" Click="Button_Click_1" Panel.ZIndex="2"/>
+            <Button Canvas.Left="105" Canvas.Top="40" Content="押せ！！" MouseDoubleClick="Button_MouseDoubleClick" FontSize="10" Panel.ZIndex="2"/>
         </Canvas>
     </Grid>
 </Window>

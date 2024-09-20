@@ -11,10 +11,5 @@ namespace Practice.Views
         {
             InitializeComponent();
         }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("何で押したん？");
-        }
     }
 }

@@ -1,4 +1,7 @@
 ﻿using Prism.Mvvm;
+using System.Windows;
+using System;
+using Prism.Commands;
 
 namespace Practice.ViewModels
 {
@@ -13,7 +16,12 @@ namespace Practice.ViewModels
 
         public MainWindowViewModel()
         {
+            
+        }
 
+        private void Button_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            MessageBox.Show("何で押したん？");
         }
     }
 }
