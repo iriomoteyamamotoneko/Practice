@@ -6,10 +6,24 @@
         Title="{Binding Title}" Height="350" Width="525" >
     <Grid>
         <Canvas>
-            <Rectangle Canvas.Left="20" Canvas.Top="20" Width="100" Height="100" Fill="Red" Panel.ZIndex="0"/>
-            <Rectangle Canvas.Left="20" Canvas.Bottom="30" Width="100" Height="100" Fill="Blue" Panel.ZIndex="2"/>
-            <Rectangle Canvas.Right="100" Canvas.Bottom="100" Width="100" Height="100" Fill="Yellow" Panel.ZIndex="1"/>
-            <Button Canvas.Left="40" Canvas.Top="40" Content="AAA" FontSize="20"/>
+            <Ellipse Canvas.Left="100" Canvas.Top="20" Width="50" Height="50" Fill="Red" Panel.ZIndex="1"/>
+            <Ellipse Canvas.Left="50" Canvas.Top="100" Width="50" Height="50" Fill="Blue" Panel.ZIndex="1"/>
+            <Ellipse Canvas.Left="150" Canvas.Top="100" Width="50" Height="50" Fill="Yellow" Panel.ZIndex="2"/>
+            <Path Stroke="Cyan" StrokeThickness="5">
+                <Path.Data>
+                    <PathGeometry>
+                        <PathGeometry.Figures>
+                            <PathFigure StartPoint="125,65">
+                                <LineSegment Point="75,100"/>
+                            </PathFigure>
+                            <PathFigure StartPoint="125,65">
+                                <LineSegment Point="175,100"/>
+                            </PathFigure>
+                        </PathGeometry.Figures>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+            <Button Canvas.Left="115" Canvas.Top="40" Content="AAA" FontSize="10"/>
         </Canvas>
     </Grid>
 </Window>
