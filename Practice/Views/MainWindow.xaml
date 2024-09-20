@@ -8,8 +8,8 @@
         <Canvas>
             <Ellipse Canvas.Left="100" Canvas.Top="20" Width="50" Height="50" Fill="Red" Panel.ZIndex="1"/>
             <Ellipse Canvas.Left="50" Canvas.Top="100" Width="50" Height="50" Fill="Blue" Panel.ZIndex="1"/>
-            <Ellipse Canvas.Left="150" Canvas.Top="100" Width="50" Height="50" Fill="Yellow" Panel.ZIndex="2"/>
-            <Path Stroke="Cyan" StrokeThickness="5">
+            <Ellipse Canvas.Left="150" Canvas.Top="100" Width="50" Height="50" Fill="Yellow" Panel.ZIndex="1"/>
+            <Path Stroke="Black" StrokeThickness="1">
                 <Path.Data>
                     <PathGeometry>
                         <PathGeometry.Figures>
@@ -23,7 +23,7 @@
                     </PathGeometry>
                 </Path.Data>
             </Path>
-            <Button Canvas.Left="115" Canvas.Top="40" Content="AAA" FontSize="10"/>
+            <Button Canvas.Left="105" Canvas.Top="40" Content="押せ！！" FontSize="10" Click="Button_Click_1" Panel.ZIndex="2"/>
         </Canvas>
     </Grid>
 </Window>
