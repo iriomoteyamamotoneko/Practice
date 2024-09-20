@@ -18,10 +18,5 @@ namespace Practice.ViewModels
         {
             
         }
-
-        private void Button_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            MessageBox.Show("何で押したん？");
-        }
     }
 }
