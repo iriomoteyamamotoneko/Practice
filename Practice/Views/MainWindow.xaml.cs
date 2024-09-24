@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Media;
 
 namespace Practice.Views
 {
@@ -11,9 +12,15 @@ namespace Practice.Views
         {
             InitializeComponent();
         }
+
         private void Button_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             MessageBox.Show("何で押したん？");
+        }
+
+        private void Button_MouseRightButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            MessageBox.Show("何で押すん？");
         }
     }
 }
